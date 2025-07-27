@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { ERROR_TYPES } from "src/error";
-import { initSocketServer } from "src/server";
-import { MessageService } from "src/services/message.service";
-import { SUCCESS_TYPES } from "src/success";
+import { ERROR_TYPES } from "../error";
+import { initSocketServer } from "../server";
+import { MessageService } from "../services/message.service";
+import { SUCCESS_TYPES } from "../success";
 
 const messageService = new MessageService();
 

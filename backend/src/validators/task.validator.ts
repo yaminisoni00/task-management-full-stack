@@ -1,6 +1,6 @@
 import Joi from "joi";
 import { CreateTaskArgs, UpdateTaskArgs, DeleteTaskArgs } from "src/args/task.args";
-import { TASK_STATUS } from "src/enums";
+import { TASK_STATUS } from "../enums";
 
 export const createTaskSchema = Joi.object({
   title: Joi.string().min(3).max(100).required(),

@@ -1,7 +1,7 @@
-import { ActivityLogsService } from "src/services/activityLogs.service";
+import { ActivityLogsService } from "../services/activityLogs.service";
 import { Request, Response } from "express";
-import { ERROR_TYPES } from "src/error";
-import { SUCCESS_TYPES } from "src/success";
+import { ERROR_TYPES } from "../error";
+import { SUCCESS_TYPES } from "../success";
 
 
 const activityLogsService = new ActivityLogsService();

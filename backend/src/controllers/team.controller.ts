@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { ERROR_TYPES } from "src/error";
-import { TeamService } from "src/services/team.service";
-import { SUCCESS_TYPES } from "src/success";
-import { createTeamSchema, deleteTeamSchema, getTeamByIdSchema, updateTeamSchema } from "src/validators/team.validator";
+import { ERROR_TYPES } from "../error";
+import { TeamService } from "../services/team.service";
+import { SUCCESS_TYPES } from "../success";
+import { createTeamSchema, deleteTeamSchema, getTeamByIdSchema, updateTeamSchema } from "../validators/team.validator";
 
 const teamService = new TeamService();
 

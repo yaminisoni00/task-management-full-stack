@@ -1,4 +1,4 @@
-import { TASK_STATUS } from "src/enums";
+import { TASK_STATUS } from "../enums";
 
 export interface CreateTaskArgs {
     title: string;

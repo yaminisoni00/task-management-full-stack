@@ -1,7 +1,7 @@
-import { USER_ROLE } from "src/enums";
-import { ERROR_TYPES } from "src/error";
-import { ActivityLogModel } from "src/models/activityLogs.model";
-import { SUCCESS_TYPES } from "src/success";
+import { USER_ROLE } from "../enums";
+import { ERROR_TYPES } from "../error";
+import { ActivityLogModel } from "../models/activityLogs.model";
+import { SUCCESS_TYPES } from "../success";
 
 export class ActivityLogsService {
     constructor() { }

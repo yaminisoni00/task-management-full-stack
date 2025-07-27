@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 import { Team } from "../models/team.model";
 import { CreateTeamArgs, DeleteTeamArgs, GetTeamMembersArgs, UpdateTeamArgs } from "src/args/team.args";
-import { ERROR_TYPES } from "src/error";
-import { SUCCESS_TYPES } from "src/success";
-import { ACTIVITY_LOG_SUB_TYPES, USER_ROLE } from "src/enums";
-import { ActivityLogModel } from "src/models/activityLogs.model";
-import { UniversalService } from "src/universal.service";
+import { ERROR_TYPES } from "../error";
+import { SUCCESS_TYPES } from "../success";
+import { ACTIVITY_LOG_SUB_TYPES, USER_ROLE } from "../enums";
+import { ActivityLogModel } from "../models/activityLogs.model";
+import { UniversalService } from "../universal.service";
 
 export class TeamService {
     constructor() { }

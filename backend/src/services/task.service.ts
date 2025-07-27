@@ -1,13 +1,13 @@
 import mongoose from "mongoose";
 import { CreateTaskArgs, DeleteTaskArgs, UpdateTaskArgs } from "src/args/task.args";
-import { ACTIVITY_LOG_SUB_TYPES, USER_ROLE } from "src/enums";
-import { ERROR_TYPES } from "src/error";
-import { ActivityLogModel } from "src/models/activityLogs.model";
-import { Project } from "src/models/project.model";
-import { Task } from "src/models/task.model";
-import { Team } from "src/models/team.model";
-import { SUCCESS_TYPES } from "src/success";
-import { UniversalService } from "src/universal.service";
+import { ACTIVITY_LOG_SUB_TYPES, USER_ROLE } from "../enums";
+import { ERROR_TYPES } from "../error";
+import { ActivityLogModel } from "../models/activityLogs.model";
+import { Project } from "../models/project.model";
+import { Task } from "../models/task.model";
+import { Team } from "../models/team.model";
+import { SUCCESS_TYPES } from "../success";
+import { UniversalService } from "../universal.service";
 
 export class TaskService {
     constructor() { }

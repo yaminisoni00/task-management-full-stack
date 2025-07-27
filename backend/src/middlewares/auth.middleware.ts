@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import admin from "firebase-admin";
-import { ERROR_TYPES } from "src/error";
-import { User } from "src/models/user.model";
+import { ERROR_TYPES } from "../error";
+import { User } from "../models/user.model";
 
 export const authenticateUser = async (req: Request, res: Response, next: NextFunction) => {
   const authHeader = req.headers.authorization;

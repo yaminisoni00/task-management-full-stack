@@ -1,8 +1,8 @@
-import { ProjectService } from "src/services/project.service";
+import { ProjectService } from "../services/project.service";
 import { Request, Response } from "express";
-import { ERROR_TYPES } from "src/error";
-import { SUCCESS_TYPES } from "src/success";
-import { createProjectSchema, deleteProjectSchema, updateProjectSchema } from "src/validators/project.validator";
+import { ERROR_TYPES } from "../error";
+import { SUCCESS_TYPES } from "../success";
+import { createProjectSchema, deleteProjectSchema, updateProjectSchema } from "../validators/project.validator";
 
 const projectService = new ProjectService();
 

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getActivityLogsController } from "src/controllers/activityLogs.controller";
+import { getActivityLogsController } from "../controllers/activityLogs.controller";
 import { authenticateUser } from "src/middlewares/auth.middleware";
 
 const router = Router();

@@ -5,9 +5,9 @@
   "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
+    "dev": "ts-node -r tsconfig-paths/register src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node -r tsconfig-paths/register dist/server.js"
   },
   "keywords": [],
   "author": "",

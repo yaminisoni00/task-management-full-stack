@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 import { CreateProjectArgs, DeleteProjectArgs, UpdateProjectArgs } from "src/args/project.args";
-import { ACTIVITY_LOG_SUB_TYPES, USER_ROLE } from "src/enums";
-import { ERROR_TYPES } from "src/error";
-import { ActivityLogModel } from "src/models/activityLogs.model";
-import { Project } from "src/models/project.model";
-import { SUCCESS_TYPES } from "src/success";
-import { UniversalService } from "src/universal.service";
+import { ACTIVITY_LOG_SUB_TYPES, USER_ROLE } from "../enums";
+import { ERROR_TYPES } from "../error";
+import { ActivityLogModel } from "../models/activityLogs.model";
+import { Project } from "../models/project.model";
+import { SUCCESS_TYPES } from "../success";
+import { UniversalService } from "../universal.service";
 
 export class ProjectService {
     constructor() { }

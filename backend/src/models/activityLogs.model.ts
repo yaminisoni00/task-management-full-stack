@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { ACTIVITY_LOG_SUB_TYPES, ACTIVITY_LOG_TYPES } from "src/enums";
+import { ACTIVITY_LOG_SUB_TYPES, ACTIVITY_LOG_TYPES } from "../enums";
 
 const activityLogSchema = new mongoose.Schema(
     {

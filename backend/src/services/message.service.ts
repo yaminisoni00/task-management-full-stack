@@ -1,9 +1,9 @@
 import { CreateChatRoomArgs, GetChatRoomMessagesArgs, SendChatRoomMessagesArgs } from "src/args/messages.args";
-import { USER_ROLE } from "src/enums";
-import { ERROR_TYPES } from "src/error";
-import { ChatRoomModel } from "src/models/chatRoom.model";
-import { Message } from "src/models/message.model";
-import { SUCCESS_TYPES } from "src/success";
+import { USER_ROLE } from "../enums";
+import { ERROR_TYPES } from "../error";
+import { ChatRoomModel } from "../models/chatRoom.model";
+import { Message } from "../models/message.model";
+import { SUCCESS_TYPES } from "../success";
 
 export class MessageService {
     constructor() { }

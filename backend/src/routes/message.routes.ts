@@ -1,5 +1,5 @@
 import express from "express";
-import { createChatRoomController, getChatRoomMessagesController, getChatRoomsController, sendChatRoomMessagesController } from "src/controllers/message.controller";
+import { createChatRoomController, getChatRoomMessagesController, getChatRoomsController, sendChatRoomMessagesController } from "../controllers/message.controller";
 import { authenticateUser } from "src/middlewares/auth.middleware";
 
 const router = express.Router();

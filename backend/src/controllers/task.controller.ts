@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { ERROR_TYPES } from "src/error";
-import { TaskService } from "src/services/task.service";
-import { SUCCESS_TYPES } from "src/success";
-import { createTaskSchema, deleteTaskSchema, updateTaskSchema } from "src/validators/task.validator";
+import { ERROR_TYPES } from "../error";
+import { TaskService } from "../services/task.service";
+import { SUCCESS_TYPES } from "../success";
+import { createTaskSchema, deleteTaskSchema, updateTaskSchema } from "../validators/task.validator";
 
 const taskService = new TaskService();
 

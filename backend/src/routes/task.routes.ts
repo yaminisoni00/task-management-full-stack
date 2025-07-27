@@ -1,6 +1,6 @@
 import express from "express";
-import { createTaskController, deleteTaskController, getTasksController, updateTaskController } from "src/controllers/task.controller";
-import { getTeamsController, createTeamController, updateTeamController, deleteTeamController } from "src/controllers/team.controller";
+import { createTaskController, deleteTaskController, getTasksController, updateTaskController } from "../controllers/task.controller";
+import { getTeamsController, createTeamController, updateTeamController, deleteTeamController } from "../controllers/team.controller";
 import { authenticateUser } from "src/middlewares/auth.middleware";
 
 const router = express.Router();

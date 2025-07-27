@@ -4,9 +4,9 @@ import { User } from "../models/user.model";
 import { ERROR_TYPES } from "../error";
 import { Team } from "../models/team.model";
 import { SUCCESS_TYPES } from "../success";
-import { ACTIVITY_LOG_SUB_TYPES } from "src/enums";
-import { UniversalService } from "src/universal.service";
-import { ActivityLogModel } from "src/models/activityLogs.model";
+import { ACTIVITY_LOG_SUB_TYPES } from "../enums";
+import { UniversalService } from "../universal.service";
+import { ActivityLogModel } from "../models/activityLogs.model";
 import bcrypt from "bcrypt";
 
 export const createUser = async (createUserArgs: CreateUserArgs): Promise<any> => {
