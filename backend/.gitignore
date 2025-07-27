@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Firebase service account key
+serviceKey.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dist folder (if built)
+dist/
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Git
+.git
