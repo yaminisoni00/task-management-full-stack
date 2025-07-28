@@ -17,11 +17,11 @@ export default function TaskForm() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/projects` || "http://localhost:5000/api/projects")
+    axios.get(`${process.env.REACT_APP_API_URL}api/projects` || "http://localhost:5000/api/projects")
       .then((res) => setProjects(res.data.result.projects || []))
       .catch((err) => console.error("Error fetching projects:", err));
 
-    axios.get(`${process.env.REACT_APP_API_URL}/api/users` || "http://localhost:5000/api/users")
+    axios.get(`${process.env.REACT_APP_API_URL}api/users` || "http://localhost:5000/api/users")
       .then((res) => setUsers(res.data.users || []))
       .catch((err) => console.error("Error fetching users:", err));
   }, []);
@@ -34,7 +34,7 @@ export default function TaskForm() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      await axios.post(`${process.env.REACT_APP_API_URL}/api/tasks/create` || "http://localhost:5000/api/tasks/create", formData);
+      await axios.post(`${process.env.REACT_APP_API_URL}api/tasks/create` || "http://localhost:5000/api/tasks/create", formData);
       navigate("/tasks");
     } catch (err) {
       console.error("Error creating task:", err);
