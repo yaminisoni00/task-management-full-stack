@@ -12,7 +12,7 @@ export default function CreateProject() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/teams` || 'http://localhost:5000/api/teams')
+    axios.get(`${process.env.REACT_APP_API_URL}api/teams` || 'http://localhost:5000/api/teams')
       .then(res => {
         if (Array.isArray(res.data.teams.teams)) {
           setTeams(res.data.teams.teams);
@@ -27,7 +27,7 @@ export default function CreateProject() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post(`${process.env.REACT_APP_API_URL}/api/projects/create` || 'http://localhost:5000/api/projects/create', {
+      await axios.post(`${process.env.REACT_APP_API_URL}api/projects/create` || 'http://localhost:5000/api/projects/create', {
         name,
         description,
         teamId: selectedTeam,
