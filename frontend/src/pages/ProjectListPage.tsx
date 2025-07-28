@@ -7,7 +7,7 @@ export default function ProjectList() {
   const [projects, setProjects] = useState<any[]>([]);
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/projects` || 'http://localhost:5000/api/projects')
+    axios.get(`${process.env.REACT_APP_API_URL}api/projects` || 'http://localhost:5000/api/projects')
       .then(res => {
         if (Array.isArray(res.data.result.projects)) {
           setProjects(res.data.result.projects);
