@@ -9,7 +9,7 @@ export default function TeamList() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/teams')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/teams` || 'http://localhost:5000/api/teams')
       .then(res => {
         setTeams(res.data.teams.teams || []);
       })
