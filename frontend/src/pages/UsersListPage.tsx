@@ -8,7 +8,7 @@ export default function UsersPage() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('/users')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/users` || '/users')
       .then(res => setUsers(res.data.users || []))
       .catch(() => setMessage('Failed to load users'));
   }, []);
