@@ -7,7 +7,7 @@ export default function TaskList() {
   const [tasks, setTasks] = useState<any[]>([]);
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/tasks` || 'http://localhost:5000/api/tasks')
+    axios.get(`${process.env.REACT_APP_API_URL}api/tasks` || 'http://localhost:5000/api/tasks')
       .then(res => {
         if (Array.isArray(res.data.tasks.tasks)) {
           setTasks(res.data.tasks.tasks);
