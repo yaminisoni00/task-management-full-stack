@@ -20,7 +20,7 @@ export default function TeamForm() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/users')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/users` || 'http://localhost:5000/api/users')
       .then((res) => {
         setUsers(res.data.users || []);
       })
@@ -50,7 +50,7 @@ export default function TeamForm() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/teams/create', {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/teams/create` || 'http://localhost:5000/api/teams/create', {
         name,
         description,
         members,
