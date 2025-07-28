@@ -27,7 +27,7 @@ export default function CreateProject() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/projects/create', {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/projects/create` || 'http://localhost:5000/api/projects/create', {
         name,
         description,
         teamId: selectedTeam,
