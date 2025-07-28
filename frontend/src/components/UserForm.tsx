@@ -14,7 +14,7 @@ export default function UserForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/users.create` || '/users/create', formData);
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}api/users/create` || '/users/create', formData);
       setMessage(res.data.message || 'User created successfully');
       setFormData({ name: '', email: '', role: '', password: '' });
     } catch (err: any) {
